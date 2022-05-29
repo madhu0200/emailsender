@@ -9,7 +9,12 @@
     <fieldset>
         {% csrf_token %}
         {% for message in messages %}
-        {{ message }}
+        <script>
+            setTimeout(function(){
+            {{ message }}
+            },2000);
+        </script>
+
         {% endfor %}
         <legend>
             email sender
