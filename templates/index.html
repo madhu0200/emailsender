@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>email sender</title>
+</head>
+<body>
+<form method="post" action="{% url 'send' %}">
+    <fieldset>
+        {% csrf_token %}
+        {% for message in messages %}
+        {{ message }}
+        {% endfor %}
+        <legend>
+            email sender
+        </legend>
+        <p>
+            enter email and click on 'send email' button
+        </p>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="enter your email address" autofocus>
+        <button type="submit">sent email</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
