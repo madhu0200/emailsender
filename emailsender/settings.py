@@ -15,8 +15,8 @@ from pathlib import Path
 
 EMAIL_USE_TLS=True
 EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='djangoprojects7@gmail.com'
-EMAIL_HOST_PASSWORD='Madhu@007'
+EMAIL_HOST_USER='gmail.com'
+EMAIL_HOST_PASSWORD='mailpassword'
 EMAIL_PORT=587
 
 
